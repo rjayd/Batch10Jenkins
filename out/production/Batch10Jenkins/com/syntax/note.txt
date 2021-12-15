@@ -1,0 +1,30 @@
+Why we don't use our local/personal laptops/computers to host websites and testing
+frameworks?
+
+1. I have to keep my laptop up and running all the time.
+2. Personal laptops/computes don't have enough RAM CPU power to entertain huge requests
+3. Internet connections are not that good.
+4. Security is also a very big problem when it comes to host services on local machine.
+5. Everyone can easily access them through their personal laptops
+For these reasons we use servers.
+
+==================================================================================
+SDLC:
+1. BAs discuss the requirements with clients and develop the SRS(Software requirement
+specification) documents
+2. This document is then shared with Architects and QA Team leads.
+3. Architects design the Software Requirement Documents(SRD) and QA leads start
+planning the testing.
+4. Once the SRDs are ready developers start working(coding) and start building the
+application.
+5. This is where the deployment life cycle starts.
+    a) Once the application is developed  on local/personal computers or laptops by
+    developers or architects to review their code for any type of mistake and after that,
+    they push the code to the git or any other version control system. Once it is done,
+    they request the dev ops or IT team to deploy the application to the development
+    server(Dev) so that they are sure application still works outside their laptops.
+    b) QA will request Dev ops IT team to deploy it to the QA server.
+    c) If everything looks good and all the test cases are passed, QAs will deploy it to the
+    Staging server. Staging servers, they are replica of production servers so that
+    we can test the application in as possible as same environment as production.
+    d) If test cases fail, QA will report them to Developer and whole cycle starts again
